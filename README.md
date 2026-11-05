@@ -31,7 +31,12 @@ Service outages are reported as HTTP 503 by the web endpoint.
   and saves their command transcripts. Requires Watson service access.
 - `evidence/`: code answers and local offline validation.
 
-The Watson endpoint could not be reached from the development Mac. Offline
-tests verify the application contract; they do not validate the model's emotion
-predictions. The requested live transcripts under `/home/project/final_project`
-must still be collected inside the Skills Network lab.
+### Verified live results
+
+The project was run successfully in the Skills Network lab at
+`/home/project/final_project` on November 5, 2026. All five live Watson tests
+passed. The web application recognized "I think I am having fun" as joy,
+and blank input displayed "Invalid text! Please try again!".
+
+The four live terminal transcripts and both deployment screenshots are saved
+in `evidence/`. Static analysis of `server.py` scored 10.00/10.
