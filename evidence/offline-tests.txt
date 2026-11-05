@@ -1,0 +1,26 @@
+OFFLINE VALIDATION ONLY: mocked Watson responses; not live course evidence.
+
+$ python3 -m unittest -v test_offline
+/Users/khalidkanaam/Documents/Codex/2026-11-05/referenced-chatgpt-conversation-this-is-an/work/emotion-venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+test_bad_request (test_offline.TestOffline)
+Represent HTTP 400 with empty emotion scores. ... ok
+test_blank_input (test_offline.TestOffline)
+Avoid calling Watson for blank text. ... ok
+test_blank_web_input (test_offline.TestOffline)
+Show the input validation message. ... ok
+test_formats_each_emotion (test_offline.TestOffline)
+Choose the maximum score for every possible dominant emotion. ... ok
+test_homepage (test_offline.TestOffline)
+Render the supplied template. ... ok
+test_http_error (test_offline.TestOffline)
+Do not disguise an unavailable service as an emotion. ... ok
+test_web_outage (test_offline.TestOffline)
+Report a service outage with HTTP 503. ... ok
+test_web_result (test_offline.TestOffline)
+Format every score and the dominant emotion. ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.007s
+
+OK
